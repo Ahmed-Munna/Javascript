@@ -18,3 +18,7 @@ var terminal = ["Dhaka", "Barishal"];
 terminal.push("Rajshahi");
 terminal.pop();
 console.log(terminal);
+
+
+x = 30;
+console.log(x);
