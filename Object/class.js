@@ -17,3 +17,9 @@ console.log("Car Year: " + myCar.year);
 let funName = function name() { console.log('hae-ten')}
 
 console.log(typeof(funName));
+
+delete myCar.colour;
+
+for (let a in myCar) {
+    console.log(myCar[a]);
+}
