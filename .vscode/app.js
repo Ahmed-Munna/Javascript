@@ -29,7 +29,6 @@
 
 //_______________Delete_____________
 
-/*
 var obj = {
     a: 10,
     b: 20,
@@ -49,17 +48,7 @@ const Car = {
 
 console.log(Car.brand);
 console.log(Car.model);
-*/
 
-function clickMe() {
-    let idName = document.getElementById('demo');
-    idName.innerHTML = "Hello there..!";
-
-}
-
-function isArray() {
-
-}
 
 
 
