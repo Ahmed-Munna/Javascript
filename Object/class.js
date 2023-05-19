@@ -5,21 +5,27 @@ class Car{
         this.colour = colour;
         this.year = year; 
     }
+
+    run(speed) {
+        console.log(this.name + ' is running in ' + speed);
+    }
 }
 
 const myCar = new Car("BMW", "3-Bench", "White", 2021);
 
-console.log("Car Name: " + myCar.name);
-console.log("Car Model: " + myCar.model);
-console.log("Car Colout: " + myCar.colour);
-console.log("Car Year: " + myCar.year);
+// console.log("Car Name: " + myCar.name);
+// console.log("Car Model: " + myCar.model);
+// console.log("Car Colout: " + myCar.colour);
+// console.log("Car Year: " + myCar.year);
 
-let funName = function name() { console.log('hae-ten')}
+// let funName = function name() { console.log('hae-ten')}
 
-console.log(typeof(funName));
+// console.log(typeof(funName));
 
-delete myCar.colour;
+// delete myCar.colour;
 
-for (let a in myCar) {
-    console.log(myCar[a]);
-}
+// for (let a in myCar) {
+//     console.log(myCar[a]);
+// }
+
+myCar.run(200);
