@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    
+    <div id="demo">
+        <h1>I'm learning Ajax</h1>
+        <button type="submit" onclick="loadData()">Change Data</button>
+    </div>
+
+    <script>
+        function loadData() {
+            const xht = new XMLHttpRequest();
+
+            xht.onload = function() {
+                const conteiner = document.getElementById("demo");
+
+                conteiner.innerHTML = this.responseText;
+            }
+
+            xht.open("GET", "./something.txt");
+            xht.send();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    
+
+    <button onclick="getDeta()">Fetch Deta</button>
+    <p id="display"></p>
+
+    <script>
+        /*
+        function getDeta() {
+            const field = document.getElementById("display");
+
+            fetch ("http://127.0.0.1:5500/api/something.txt")
+                .then((res) => res.text())
+                .then((data) => field.innerText = data);
+        }
+        */
+       async function getDeta() {
+            const field = document.getElementById("display");
+
+            const req = await fetch("http://127.0.0.1:5500/api/something.txt");
+            const data = await req.text();
+
+            field.innerText = data;
+       }
+    </script>
+</body>
+</html>
