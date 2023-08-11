@@ -26,7 +26,7 @@ let a = 3.45658;
 
 let b = a.toString();
 let c = a.toExponential(2);
-let d = a.toFixed(2);
+let d = a.toFixed(5);
 let p = a.toPrecision(2);
 
 let num = "389";
@@ -34,7 +34,7 @@ let n = Number(num);
 
 let partI = "30.3";
 let i = parseInt(partI);
-let f = parseFloat(partI);
+let f = parseFloat(d);
 console.log(f);
 
 
