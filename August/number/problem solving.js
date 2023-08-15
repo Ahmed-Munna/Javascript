@@ -56,53 +56,55 @@ Input Samples	Output Samples
 
 // 1021
 
-// const lines = '91.01';
-// const N = lines.split(" ").map(Number);
+const lines = '91.01';
+const N = lines.split(" ").map(Number);
 
 
-// function myFun(up, dowon) {
-//     let a = Math.floor(up / dowon);
-//     let b = up % dowon;
-//     let d = a/2;
-//     return [a,b, d];
-// }
+function myFun(up = null, dowon = null, sen = null) {
+    let a = Math.floor(up / dowon);
+    let b = up % dowon;
+    let d = (b/sen).toString();
+    return [a,b, d];
+}
 
-console.log(myFun(N, 20));
+console.log(myFun(N, 100));
+console.log(myFun(N, 100));
+console.log(myFun(N, 100));
+console.log(myFun(N, 100));
+console.log(myFun(N, 100));
 
-console.log("NOTAS:");
+// console.log(myFun(N, 20));
 
-let h = myFun(N, '100');
-console.log(h[0] + " nota(s) de R$ 100,00");
-let f = myFun(h[1], 50);
-console.log(f[0] + " nota(s) de R$ 50,00");
-let t = myFun(f[1], 20);
-console.log(t[0] + " nota(s) de R$ 20,00");
-let te = myFun(t[1], 10);
-console.log(te[0] + " nota(s) de R$ 10,00");
-let fi = myFun(te[1], 5);
-console.log(fi[0] + " nota(s) de R$ 5,00");
-let tw = myFun(fi[1], 2);
-console.log(tw[0] + " nota(s) de R$ 2,00");
+// console.log("NOTAS:");
 
+// let h = myFun(N, '100');
+// console.log(h[0] + " nota(s) de R$ 100,00");
+// let f = myFun(h[1], 50);
+// console.log(f[0] + " nota(s) de R$ 50,00");
+// let t = myFun(f[1], 20);
+// console.log(t[0] + " nota(s) de R$ 20,00");
+// let te = myFun(t[1], 10);
+// console.log(te[0] + " nota(s) de R$ 10,00");
+// let fi = myFun(te[1], 5);
+// console.log(fi[0] + " nota(s) de R$ 5,00");
+// let tw = myFun(fi[1], 2);
+// console.log(tw[0] + " nota(s) de R$ 2,00");
+// let o = myFun(tw[1], 1);
 
-console.log("MOEDAS:");
+// console.log("MOEDAS:");
 
-console.log(h[2] + " moeda(s) de R$ 1.00");
-console.log(f[2] + " moeda(s) de R$ 0.50");
-console.log(t[2] + " moeda(s) de R$ 0.25");
-console.log(te[2] + " moeda(s) de R$ 0.10");
-console.log(fi[2] + " moeda(s) de R$ 0.05");
-console.log(tw[2] + " moeda(s) de R$ 0.01");
-
-
-
-
-let w = 7;
-
-let result1 = (w % 2 != 1)? "YES" : "NO";
-
-console.log(result1);
-
+// console.log(o[0] + " nota(s) de R$ 1,00");
+// let s1 = myFun(o[1], 1, 0.50);
+// console.log(s1[2] + " moeda(s) de R$ 0.50");
+// let s2 = myFun(s1[1], 1, 0.25);
+// console.log(s2[2] + " moeda(s) de R$ 0.25");
+// let s3 = myFun(s2[1], 1, 0.10);
+// console.log(s3[2] + " moeda(s) de R$ 0.10");
+// let s4 = myFun(s3[1], 1, 0.05);
+// console.log(s4[2] + " moeda(s) de R$ 0.05");
+// let s5 = myFun(s4[1], 1, 0.01);
+// console.log(s4[2] + " moeda(s) de R$ 0.01");
+// console.log(s4)
 
 
 
