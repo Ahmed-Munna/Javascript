@@ -10,10 +10,25 @@ class std {
    }
 }
 
-let st = new std('Helle', ' world');
+// let st = new std('Helle', ' world');
 
-console.log(st.myfunc());
+// console.log(st.myfunc());
 
 
+const a = ['Dhaka', 'Rajshahi', 'Rongpur', 'Barishalllllll'];
+
+let len = a.length;
+
+let ind = 0, dis = '', j = 0;
+
+for (let i = 0; i < len; i++) {
+    let b = a[i].length;
+    if (b > ind) {
+        ind = b;
+        j = i;
+        dis = a[i];
+    }
+}
+console.log(ind, dis, j);
 
 
