@@ -1,23 +1,22 @@
 
-
 function Person (fname, lname, age) {
     this.fname = fname;
     this.lname = lname;
     this.age = age;
-    this.fullname = function () {
+    this.fullName = function () {
         return this.fname + ' ' + this.lname;
     }
 }
 
-const Vau = new Person('Munna', 'Vau', 20);
 const Munna = new Person('Ahmed', 'Munna', 20);
-Vau.country = 'Bangladesh';
+const Vau = new Person('Munna', 'Vau', 20);
+Person.prototype.String = 20;
 
-console.log(Munna.fullname.call(Vau));
-
-
-
-
+let x = 'hello';
+String.prototype.concat = function () {
+    return 'Hello World';
+}
+console.log(x.concat);
 
 
 
