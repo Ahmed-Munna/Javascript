@@ -18,15 +18,25 @@
 // }
 
 
-let a = [3,4,6,7];
+// let a = [3,4,6,7];
 
-let b = Math.max.apply(null,a);
+// let b = Math.max.apply(null,a);
 
-console.log(b);
+// console.log(b);
 
+function add() {
+    let counter = 0;
 
-
-
+    return function () {
+        counter += 1;
+    };
+}
+let adding = add();
+adding();
+adding();
+adding();
+adding();
+console.dir(adding)
 
 
 
