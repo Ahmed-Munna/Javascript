@@ -24,19 +24,28 @@
 
 // console.log(b);
 
-function add() {
-    let counter = 0;
+// let javasc = {
+//     name: 'Javascript',
+//     libray: ['React', 'Angular', 'Vue'],
+//     works: function () {
+//         this.libray.forEach((value) => {
+//             console.log(this.name);
+//         });
+//     }
+// }
 
-    return function () {
-        counter += 1;
-    };
-}
-let adding = add();
-adding();
-adding();
-adding();
-adding();
-console.dir(adding)
+// javasc.works()
+
+
+let a = [2,3,4,5,6,7,8];
+
+let cv = a.find(function(currentValue, currentIndex, arr) {
+    return currentValue > 4;
+});
+
+console.log(cv);
+
+
 
 
 
