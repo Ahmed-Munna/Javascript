@@ -37,15 +37,35 @@
 // javasc.works()
 
 
-let a = [2,3,4,5,6,7,8];
+// let a = [2,3,4,5,6,7,8];
 
-let cv = a.find(function(currentValue, currentIndex, arr) {
-    return currentValue > 4;
-});
+// let cv = a.find(function(currentValue, currentIndex, arr) {
+//     return currentValue > 4;
+// });
 
-console.log(cv);
+// console.log(cv);
 
+let some = {
+    name: 'munna',
+    age: 23,
+    hobby: ['playing guiter', 'singing song'],
+    activity: {
+        prof: 'Lerning something',
+        ano: 'kichu'
+    },
 
+    fun: function() {
+        return "hello";
+    }
+}
 
+let a = Object.keys(some);
+let b = Object.values(some);
+let c = Object.entries(some);
 
+let d = [3,4,5,6];
+
+let e = [...d, 8, 9, 0];
+
+console.log(e);
 
