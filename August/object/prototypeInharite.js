@@ -12,7 +12,7 @@ function Crickter(type, run) {
 
 const Sakib = new Crickter('Sakib', 35, 'All-rounder', 5939);
 
-console.log(Sakib.name);
+console.log(Sakib);
 
 
 
