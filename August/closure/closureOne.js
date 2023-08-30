@@ -12,12 +12,26 @@
 // console.dir(myFunc(2));
 // console.dir(myFunc)
 
-for(var i = 1; i < 4; i++) {
+// এখানে var, let কিভাবে কাজ করছে ?
+
+for(let i = 1; i < 4; i++) {
 
     setTimeout(() => {
         console.log(i)
     },1000);
 }
+
+// এখানে Self-Invoking function কিভাবে কাজ করছে ?
+
+// for(var i = 1; i < 4; i++) {
+
+//     (function(x) {setTimeout(() => {
+//         console.log(x)
+//     },1000)})(i);
+// }
+
+
+// এখানে function কল করার আগে a = 49 কাজ করছে না কেনো ?
 
 // let a ;
 
@@ -29,9 +43,9 @@ for(var i = 1; i < 4; i++) {
 //     }
 //     return setTimeout(fun,2000);
 // }
+// a = 49;
 
 // myFunc();
-// a = 49;
 
 // console.dir(myFunc)
 
