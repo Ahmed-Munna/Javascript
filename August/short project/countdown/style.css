@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+/* general styling */
+:root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    align-items: center;
+    background-color: #1a1c3a;
+    display: flex;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen-Sans, 
+      Ubuntu, 
+      Cantarell, 
+      "Helvetica Neue", 
+      sans-serif;
+      font-weight: 500;
+  }
+  
+  .container {
+    color: #cccaca;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: 700;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+
+  .mybtn {
+   color:white;
+   background-color: #1a1c3a;
+   border: none;
+   box-shadow: rgba(86, 85, 99, 0.2) 0px 8px 24px;
+   border-radius: 4px;
+   font-weight: 500;
+   padding: 10px 30px; 
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+/* popup options */
+.login_header {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  .login_headline {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  form {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  input {
+    width: 100%;
+    height: 40px;
+    display: block;
+    border: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid #d1d0d0;
+    color: #d1d0d0;
+    
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  ::placeholder {
+    color: #d1d0d0;
+  }
+  
+  .btn {
+    width: 70%;
+    padding: 12px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #1a1c3a;
+    border: none;
+    color: #c1c2c4;
+    box-shadow: rgba(86, 85, 99, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#popup {
+    background-color: rebeccapurple;
+    padding: 20px 40px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+    position: absolute;
+    left: 40%;
+    width: 300px;
+    height: 200px;
+    visibility: hidden;
+    transition: 5s;
+}
+input[type = "date"]::-webkit-calender-indicator {
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
