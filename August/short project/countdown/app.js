@@ -1,13 +1,11 @@
 
-const setTime = document.getElementById("setTime"),
-      pauseTime = document.getElementById("pauseTime"),
-      resetTime = document.getElementById("resetTime"),
-      popup = document.getElementById("popup");
+const pauseTime = document.getElementById("pauseTime"),
+      resetTime = document.getElementById("resetTime");
 
-setTime.onclick = () => {
-    popup.style.visibility = "visible";
-    console.log(popup);
-}
+let today = new Date(),
+    dd = today.getDate();
+
+    console.log(dd);
 
 
 
