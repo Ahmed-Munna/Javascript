@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="notifiy">
+        <p>notifiy</p>
+    </div>
+
+    <div class="todo-app">
+      <section class="input-section">
+        <input id="todoInput" type="text" placeholder="Add item..." />
+        <button id="addBtn" type="submit" class="add">Add</button>
+        <button
+          type="button"
+          class="add"
+          id="update-button"
+          style="display: none"
+        >
+          Update
+        </button>
+        <input type="text" id="search-input" placeholder="Search" />
+        <button type="button" id="search-button">Search</button>
+      </section>
+      <div class="todos">
+        <ul class="todo-list">
+          <li class="li">
+          <input class="form-check-input" type="checkbox" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1"></label>
+          <span class="todo-text">text</span>
+          <span class="todo-text">date</span>
+          <span class="span-button"><i class="fa-solid fa-trash"></i></span>
+          <span class="span-button"><i class="fa-solid fa-pen"></i></span>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
