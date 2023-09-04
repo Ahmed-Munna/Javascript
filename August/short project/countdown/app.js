@@ -3,7 +3,8 @@ const pauseTime = document.getElementById("pauseTime"),
       resetTime = document.getElementById("resetTime");
 
 let today = new Date(),
-    dd = today.getDate();
+    sec = today.getSeconds(),
+    min = ;
 
     console.log(dd);
 

@@ -1,0 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .container {
+    height: 110px;
+    background: #ff6613;
+    background: -webkit-linear-gradient(5deg, #ff6613, #ff3300);
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease;
+    transform-origin: top;
+  }
+  
+  .time {
+    position: relative;
+    background: #fff;
+    border-radius: 0.8rem;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .time h1 {
+    position: relative;
+    font-size: 8.5rem;
+    z-index: 99;
+  }
+  
+  .second {
+    position: absolute;
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 2px;
+    opacity: 0.1;
+  }
+  
+  .days {
+    font-size: 1.6rem;
+    min-width: 100px;
+  }
+  
+  .days ul {
+    list-style: none !important;
+    text-align: center;
+    color: #eee;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .days ul li:nth-child(1) {
+    max-height: 1px;
+  }
+  
+  .days ul li:nth-child(2) {
+    font-size: 72px;
+    background: -webkit-linear-gradient(red, #eee, #ffffff);
+    -webkit-text-fill-color: transparent;
+  }
