@@ -60,6 +60,7 @@ body {
   }
   .add {
     margin-right: 10px;
+    width: 200px;
   }
   .todos {
     width: 100%;
@@ -143,7 +144,6 @@ body {
   }
   #notifiy {
     padding: 0 20px;
-    background-color: rgba(220, 20, 60, 0.473);
     border-radius: 8px;
     position: absolute;
     color: #f2f2f2;
@@ -151,6 +151,5 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 0;
     right: 30px;
-    transition: .5s;
     visibility: hidden;
   }
