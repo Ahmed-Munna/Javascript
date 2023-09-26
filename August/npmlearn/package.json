@@ -1,0 +1,14 @@
+{
+  "name": "npmlearn",
+  "version": "1.0.0",
+  "description": "learnig npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "munnaVau",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}
