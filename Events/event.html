@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    <ul id="headings">
+        <li>
+            <h3 id="hOne">Heading one</h3>
+        </li>
+        <li>
+            <h3 id="hTwo">Heading two</h3>
+        </li>
+        <li>
+            <h3 id="hThree">Heading three</h3>
+        </li>
+        <li>
+            <h3 id="hFour">Heading four</h3>
+        </li>
+    </ul>
+    
+</body>
+<script>
+
+    document.querySelector("#headings").addEventListener("click", function(e) {
+        console.log(e.view);
+    }, false);
+
+
+</script>
+</html>
