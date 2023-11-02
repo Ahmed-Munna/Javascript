@@ -25,10 +25,39 @@
 </body>
 <script>
 
-    document.querySelector("#headings").addEventListener("click", function(e) {
-        console.log(e.view);
-    }, false);
+    // document.querySelector("#headings").addEventListener("click", function(e) {
+    //     console.log(e.view);
+    // }, false);
 
+    function wakeUp(time) {
+        return 'I woke up at: ' . time;
+    }
+    function breakeFast() {
+        return 'Breads, vagitables, and drinks';
+    }
+    function work() {
+        return 'I am working, right now';
+    }
+    function lunch() {
+        return 'lunch is Done';
+    }
+    function free() {
+        return 'I have done my work';
+    }
+    function sleep() {
+        return 'I am sleeping';
+    }
 
+    async function duti() {
+
+        await  console.log(wakeUp("3:49"));
+        await  console.log(breakeFast());
+        await  console.log(work());
+        await  console.log(lunch());
+        await  console.log(free());
+        await  console.log(sleep());
+    }
+
+    duti()
 </script>
 </html>
